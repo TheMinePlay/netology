@@ -548,6 +548,10 @@ label:hover {
 }
 
 @media(max-width: 1280px) {
+  .header {
+    background-image: url("img/banner-bg-tablet.jpg");
+  }
+
   .links {
     display: none;
     top: 100px;
@@ -599,6 +603,10 @@ label:hover {
 }
 
 @media(max-width: 1280px) and (min-width: 1081px) {
+  .header {
+    background-image: url("img/banner-bg-mobile.jpg");
+  }
+
   .top-section-block {
     width: 49%;
   }
