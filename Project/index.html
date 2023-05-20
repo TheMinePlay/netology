@@ -7,6 +7,32 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 	<body>
+	<section class="pop-up-menu">
+		<div class="pop-up-menu-wrapper-x">
+			<button class="close-btn" onclick="document.getElementsByClassName('pop-up-menu')[0].style.display = 'none'; document.getElementsByClassName('pop-up-opacity')[0].style.display = 'none';"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 441 441"><path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z"/></svg> </button>
+			<h3 class="feedback-title additional-title"> Ваш фидбек </h3>
+  		<form class="feedback-form">
+				<select class="feedback-activity">
+					<option> Каждый день </option>
+					<option selected> Почти каждый день </option>
+					<option> Редко </option>
+					<option> В первый раз зашёл </option>
+				</select>
+
+				<h4 class="feedback-subtitle"> Вы подписаны на рассылку? </h4>
+				<div class="feedback-mailing">
+					<div class="feedback-mailing-yes"> <input class="feedback-mailing-radio" type="radio" name="mailing" value="yes" checked> <label class="feedback-mailing-label"> Да </label> </div>
+			 		<div class="feedback-mailing-no"> <input class="feedback-mailing-radio" type="radio" name="mailing" value="no"> <label class="feedback-mailing-label"> Нет </label> </div>
+				</div>
+
+				<h4 class="feedback-subtitle"> Расскажите, какой контект вы хотели бы видеть на нашем сайте? </h4>
+				<textarea class="feedback-addition">Может, больше рецептов?</textarea>
+				<button class="feedback-answer-btn" type="submit"> Отправить </button>
+  		</form>
+		</div>
+	</section>
+
+	<div class="pop-up-opacity"> </div>
   <header class="header">
     <nav class="nav">
       <img alt="Лого" src="svg/noemi-logo.svg" class="logo" width="250px">
@@ -26,51 +52,52 @@
   </header>
 
   <main class="main">
-  	<section class="top-section">
-		<h3 class="additional-title top-section-title"> Сейчас в тренде </h3>
-		<div class="top-section-blocks">
-			<article class="top-section-block first-block">
-				<div class="top-section-block-title">
-					<ul class="theme-block top-section-block-subtitle-ul">
-						 <li class="theme"> <span class="top-section-subtitle"> Lifestyle </span> </li> 
-						 <li class="theme"> <span class="top-section-subtitle"> Interior </span> </li>
-					</ul>
-					<h4 class="top-section-title"> Сейчас в тренде: сад на подоконнике </h4> </div>
-				<div class="opacity-block"> </div>
-			</article>
+	  	<section class="top-section">
+			<h3 class="additional-title top-section-title"> Сейчас в тренде </h3>
+			<div class="top-section-blocks">
+				<article class="top-section-block first-block">
+					<div class="top-section-block-title">
+						<ul class="theme-block top-section-block-subtitle-ul">
+							 <li class="theme"> <span class="top-section-subtitle"> Lifestyle </span> </li> 
+							 <li class="theme"> <span class="top-section-subtitle"> Interior </span> </li>
+						</ul>
+						<h4 class="top-section-title"> Сейчас в тренде: сад на подоконнике </h4> </div>
+					<div class="opacity-block"> </div>
+				</article>
 
-			<article class="top-section-block second-block">
-				<div class="top-section-block-title">
-					<ul class="theme-block top-section-block-subtitle-ul">
-					 	<li class="theme"> <span class="top-section-subtitle"> Food </span> </li>
-					 </ul>
-					<h4 class="top-section-title"> Сыры на красивых картинках из интернета: какие они на вкус? </h4> </div>
-				<div class="opacity-block"> </div>
-			</article>
+				<article class="top-section-block second-block">
+					<div class="top-section-block-title">
+						<ul class="theme-block top-section-block-subtitle-ul">
+						 	<li class="theme"> <span class="top-section-subtitle"> Food </span> </li>
+						 </ul>
+						<h4 class="top-section-title"> Сыры на красивых картинках из интернета: какие они на вкус? </h4> </div>
+					<div class="opacity-block"> </div>
+				</article>
 
-			<article class="top-section-block third-block">
-				<div class="top-section-block-title">
-					<ul class="theme-block top-section-block-subtitle-ul">
-						 <li class="theme"> <span class="top-section-subtitle"> Lifestyle </span> </li>
-						 <li class="theme"> <span class="top-section-subtitle"> Travel </span> </li>
-					</ul>
+				<article class="top-section-block third-block">
+					<div class="top-section-block-title">
+						<ul class="theme-block top-section-block-subtitle-ul">
+							 <li class="theme"> <span class="top-section-subtitle"> Lifestyle </span> </li>
+							 <li class="theme"> <span class="top-section-subtitle"> Travel </span> </li>
+						</ul>
 
-					<h4 class="top-section-title"> Собираемся в первый поход в горы </h4> </div>
-				<div class="opacity-block"> </div>
-			</article>
+						<h4 class="top-section-title"> Собираемся в первый поход в горы </h4> </div>
+					<div class="opacity-block"> </div>
+				</article>
 
-			<article class="top-section-block fourth-block">
-				<div class="top-section-block-title">
-					<ul class="theme-block top-section-block-subtitle-ul">
-						 <li class="theme"> <span class="top-section-subtitle"> Food </span>  </li>
-						 <li class="theme"> <span class="top-section-subtitle"> Health </span> </li>
-					</ul>
+				<article class="top-section-block fourth-block">
+					<div class="top-section-block-title">
+						<ul class="theme-block top-section-block-subtitle-ul">
+							 <li class="theme"> <span class="top-section-subtitle"> Food </span>  </li>
+							 <li class="theme"> <span class="top-section-subtitle"> Health </span> </li>
+						</ul>
 
-					<h4 class="top-section-title"> Сейчас в тренде: сколько витамина C в лимонах? </h4> </div>
-				<div class="opacity-block"> </div>
-			</article>
-		</div>
+						<h4 class="top-section-title"> Сейчас в тренде: сколько витамина C в лимонах? </h4> </div>
+					<div class="opacity-block"> </div>
+				</article>
+			</div>
   	</section>
+
   	<div class="main-wrapper">
 	    <section class="main-section">
 	      <article class="post-block first">
@@ -214,7 +241,7 @@
 
 	        <section class="post-list">
 	          <article class="additional-post first">
-	            <img class="post-block-img" alt="Изображение поста" src="img/2.jpg" width="70px" height="70px" class="additional-post-img">
+	            <img alt="Изображение поста" src="img/2.jpg" width="70px" height="70px" class="additional-post-img">
 	            <div class="additional-post-content">
 	              <time> <span> 14 июня 2019 </span> </time> <br>
 	              <h4 class="additional-post-title"> 10 Мест ради которых стоит проснуться  </h4>
@@ -238,7 +265,7 @@
 	          </article>
 
 	          <article class="additional-post fourth">
-	            <img class="post-block-img" alt="Изображение поста" src="img/501.jpg" width="70px" height="70px" class="additional-post-img">
+	            <img alt="Изображение поста" src="img/501.jpg" width="70px" height="70px" class="additional-post-img">
 	            <div class="additional-post-content">
 	              <time> <span> 14 июня 2019 </span> </time> <br>
 	              <h4 class="additional-post-title"> Кулинарный подход к науке </h4>
@@ -246,7 +273,7 @@
 	          </article>
 
 	          <article class="additional-post fifth">
-	            <img class="post-block-img" alt="Изображение поста" src="img/7.jpg" width="70px" height="70px" class="additional-post-img">
+	            <img alt="Изображение поста" src="img/7.jpg" width="70px" height="70px" class="additional-post-img">
 	            <div class="additional-post-content">
 	              <time class="additional-post-time"> <span> 14 июня 2019 </span> </time> <br>
 	              <h4 class="additional-post-title"> Лучшие причёски для распущенных волос </h4>
@@ -274,14 +301,14 @@
 	          <h3 class="additional-title theme-filter-title"> Теги </h3>
 	          <div class="theme-filter-content">
 	            <ul class="theme-filter-checkboxes">
-	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="fashion" name="filter" value="fashion" class="theme-filter-radioButton"> <label for="fashion"> Fashion </label> </li>
-	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="music" name="filter" value="music" class="theme-filter-radioButton"> <label for="music"> Music </label> </li>
-	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="lifestyle" name="filter" value="lifestyle" class="theme-filter-radioButton"> <label for="lifestyle"> Lifestyle </label> </li>
-	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="art" name="filter" value="art" class="theme-filter-radioButton"> <label for="art"> Art </label> </li>
-	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="interior" name="filter" value="interior" class="theme-filter-radioButton"> <label for="interior"> Interior </label> </li>
-	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="travel" name="filter" value="travel" class="theme-filter-radioButton"> <label for="travel"> Travel </label> </li>
-	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="food" name="filter" value="food" class="theme-filter-radioButton"> <label for="food"> Food </label> </li>
-	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="health" name="filter" value="health" class="theme-filter-radioButton"> <label for="health"> Health </label> </li>
+	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="fashion" name="filter" value="fashion" class="theme-filter-radioButton"> <label class="filter-label" for="fashion"> Fashion </label> </li>
+	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="music" name="filter" value="music" class="theme-filter-radioButton"> <label class="filter-label" for="music"> Music </label> </li>
+	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="lifestyle" name="filter" value="lifestyle" class="theme-filter-radioButton"> <label class="filter-label" for="lifestyle"> Lifestyle </label> </li>
+	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="art" name="filter" value="art" class="theme-filter-radioButton"> <label class="filter-label" for="art"> Art </label> </li>
+	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="interior" name="filter" value="interior" class="theme-filter-radioButton"> <label class="filter-label" for="interior"> Interior </label> </li>
+	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="travel" name="filter" value="travel" class="theme-filter-radioButton"> <label class="filter-label" for="travel"> Travel </label> </li>
+	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="food" name="filter" value="food" class="theme-filter-radioButton"> <label class="filter-label" for="food"> Food </label> </li>
+	              <li class="theme-filter-radioButton-li"> <input type="checkbox" id="health" name="filter" value="health" class="theme-filter-radioButton"> <label class="filter-label" for="health"> Health </label> </li>
 	                </ul>
 	          </div>
 	        </section>
@@ -398,6 +425,6 @@
     var h = parseInt(window.innerHeight);
 
     if ( (w<=1280)) {
-        document.getElementsByClassName('links')[0].style.display = 'none';
-    }
+      document.getElementsByClassName('links')[0].style.display = 'none';
+    };
 </script>
