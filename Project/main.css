@@ -142,7 +142,11 @@ h4 {
   border: none;
   background: #f4f7f6;
   -webkit-appearance: none;
-  padding-left: 10px;
+  padding-left: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='174' height='296' fill='none'%3E%3Cpath d='M86.944.389l75.297 130.417H11.648L86.944.389zM86.945 296L11.648 165.583h150.593L86.944 296z' fill='%23B59F5B'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 95%;
 }
 
 .feedback-mailing {
@@ -190,7 +194,6 @@ h4 {
   border: none;
   background: #f4f7f6;
   font-size: 15px;
-  color: gray;
   padding-top: 20px;
 }
 
@@ -203,6 +206,13 @@ h4 {
   margin-top: 10px;
   height: 50px;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+.feedback-answer-btn:hover {
+  background: #ab985d;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .close-btn {
@@ -563,6 +573,7 @@ time {
 
   text-transform: uppercase;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .good-block-btn:hover {
@@ -772,7 +783,7 @@ time {
   }
 
   .goods-block-wrapper {
-    transform: translate(25%, 0);
+    transform: translate(15vw, 0);
     flex-direction: column;
     left: 5vw;
   }
