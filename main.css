@@ -281,7 +281,7 @@ h4 {
 
 .main-wrapper {
   padding: 50px 15px;
-  width: 1500px;
+  width: 1400px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -668,11 +668,15 @@ time {
   display: none;
 }
 
-@media(max-width: 1280px) {
+@media(max-width: 1200px) {
   .links {
     display: none;
-    top: 100px;
+    top: 15vh;
   }
+
+  .logo {
+    margin-left: 5vw;
+  } 
 
   .nav-link {
     font-size: 15px;
@@ -719,7 +723,7 @@ time {
   }
 }
 
-@media(max-width: 1280px) and (min-width: 1081px) {
+@media(max-width: 1200px) and (min-width: 641px) {
   .header {
     background-image: url("img/banner-bg-tablet.jpg");
   }
@@ -729,7 +733,7 @@ time {
   }
 
   .main-wrapper {
-    width: 1100px;
+    width: 90vw;
   }
 
   .goods-block-wrapper {
@@ -737,11 +741,27 @@ time {
   }
 
   .adress {
-    width: 1100px;
+    width: 90vw;
+  }
+
+  .search {
+    width: 27vw;
+  }
+
+  .mail {
+    width: 31vw;
+  }
+
+  .theme-filter-checkboxes {
+    width: 35vw;
+  }
+
+  .theme-filter-form {
+    width: 35vw;
   }
 }
 
-@media(max-width: 1080px) {
+@media(max-width: 640px) {
   .header {
     background-image: url("img/banner-mobile.jpg");
   }
@@ -762,10 +782,6 @@ time {
     font-size: 25px;
   }
 
-  .logo {
-    margin-left: 20px;
-  } 
-
   .top-section-block {
     width: 100%;
   }
@@ -783,8 +799,62 @@ time {
   }
 
   .goods-block-wrapper {
-    transform: translate(15vw, 0);
+    transform: translate(20vw, 0);
     flex-direction: column;
     left: 5vw;
   }
+
+  .logo {
+    margin-left: 20px;
+    width: 35vw;
+  }
+
+  .header-title {
+    top: 30px;
+    font-size: 40px;
+  }
+
+  .good-img {
+    width: 60vw;
+  }
+
+  .main-part-of-good-block {
+    width: 60vw;
+    height: 200px;
+  }
+
+  .goods-block-wrapper {
+    left: 0;
+  }
+
+  .good-block {
+    width: 200px;
+  }
+
+  .goods-block-wrapper {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .pop-up-menu-wrapper-x {
+    width: 75vw;
+    height: 740px;
+    transform: translate(0, 10%);
+  }
+
+  .close-btn {
+    left: 74vw;
+  }
+
+  .price-block {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .good-block-btn {
+    height: 40px;
+    width: 130px;
+    right: -10px;
+    bottom: 5px;
+  } 
 }
