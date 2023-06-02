@@ -1,7 +1,7 @@
 @font-face { 
   font-family: "OpenSans-Regular";
   font-weight: 400;
-  src: local("Open Sans"),
+  src: local("OpenSans-Regular"),
     url("fonts/OpenSans-Regular.woff") format("woff"),
     url("fonts/OpenSans-Regular.woff2") format("woff2"),
     url("fonts/OpenSans-Regular.ttf") format("ttf");
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "OpenSans-Bold";
   font-weight: 700;
-  src: local("Open Sans"),
+  src: local("OpenSans-Bold"),
     url("fonts/OpenSans-Bold.woff") format("woff"),
     url("fonts/OpenSans-Bold.woff2") format("woff2"),
     url("fonts/OpenSans-Bold.ttf") format("ttf");
@@ -63,7 +63,7 @@ h4 {
 
 .links {
   position: absolute;
-  right: 10%;
+  right: 5vw;
 }
 
 .nav-link {
@@ -122,7 +122,7 @@ h4 {
   z-index: 100;
   width: 540px;
   height: 660px;
-  transform: translate(0, 25%);
+  transform: translate(0, 17.5%);
 }
 
 .pop-up-opacity {
@@ -278,10 +278,9 @@ h4 {
   background-image: url("img/trend4.jpg");
 }
 
-
 .main-wrapper {
   padding: 50px 15px;
-  width: 1400px;
+  width: 1600px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -522,11 +521,7 @@ time {
   justify-content: center;
   gap: 125px;
   position: relative;
-  right: 15px;
-}
-
-.good-block {
-  width: 375px;
+  flex-wrap: wrap;
 }
 
 .good-img {
@@ -597,18 +592,18 @@ time {
   font-size: 20px;
 }
 
-.adress {
+.address {
     display: block;
     position: relative;
     height: 60px;
     background: #f4f7f6;
     text-align: center;
     padding-top: 30px;
-    width: 1500px;
+    width: 1600px;
     margin: -50px auto;
 }
 
-.adress-link {
+.address-link {
   text-decoration: none;
   margin-right: 30px;
   background-repeat: no-repeat;
@@ -630,11 +625,11 @@ time {
   bottom: 75px;
 }
 
-.adress-link:hover {
+.address-link:hover {
   color: gray;
 }
 
-.adress-link:hover + .hover-title {
+.address-link:hover + .hover-title {
   display: inline;  
 }
 
@@ -666,6 +661,22 @@ time {
 
 .nav-menu-btn {
   display: none;
+}
+
+@media(min-width: 1200px) {
+  .links {
+    transform: translate(0, 15px);
+  }
+}
+
+@media(max-width: 1600px) and (min-width: 1200px) {
+  .main-wrapper {
+    width: 1150px;
+  }
+
+  .address {
+    width: 1150px;
+  }
 }
 
 @media(max-width: 1200px) {
@@ -736,11 +747,7 @@ time {
     width: 90vw;
   }
 
-  .goods-block-wrapper {
-    flex-wrap: wrap;
-  }
-
-  .adress {
+  .address {
     width: 90vw;
   }
 
@@ -794,7 +801,7 @@ time {
     width: 90vw;
   }
 
-  .adress {
+  .address {
     width: 90vw;
   }
 
