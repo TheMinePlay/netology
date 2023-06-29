@@ -15,7 +15,7 @@
       <button class="close-btn" onclick="document.getElementsByClassName('pop-up-menu')[0].style.display = 'none'; document.getElementsByClassName('pop-up-opacity')[0].style.display = 'none';"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 441 441">
           <path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z" />
         </svg> </button>
-      <h2 class="feedback-title additional-title"> Ваш фидбек </h3>
+      <h2 class="feedback-title additional-title"> Ваш фидбек </h2>
       <form class="feedback-form">
         <select class="feedback-activity">
           <option> Каждый день </option>
@@ -24,13 +24,13 @@
           <option> В первый раз зашёл </option>
         </select>
 
-        <h3 class="feedback-subtitle"> Вы подписаны на рассылку? </h4>
+        <label class="feedback-subtitle"> Вы подписаны на рассылку? </label>
         <div class="feedback-mailing">
           <div class="feedback-mailing-yes"> <input class="feedback-mailing-radio" type="radio" name="mailing" value="yes" checked> <label class="feedback-mailing-label"> Да </label> </div>
           <div class="feedback-mailing-no"> <input class="feedback-mailing-radio" type="radio" name="mailing" value="no"> <label class="feedback-mailing-label"> Нет </label> </div>
         </div>
 
-        <h3 class="feedback-subtitle"> Расскажите, какой контект вы хотели бы видеть на нашем сайте? </h4>
+        <label class="feedback-subtitle"> Расскажите, какой контект вы хотели бы видеть на нашем сайте? </label>
         <textarea class="feedback-addition" placeholder="Может, больше рецептов?"></textarea>
         <button class="feedback-answer-btn" type="submit"> Отправить </button>
       </form>
@@ -41,9 +41,11 @@
   <header class="header">
     <nav class="nav">
       <img alt="Лого" src="svg/noemi-logo.svg" class="logo" width="250px">
-      <button class="nav-menu-btn" onclick="if(i==1) {document.getElementsByClassName('links')[0].style.display = 'flex'; i=0;} else {document.getElementsByClassName('links')[0].style.display = 'none'; i=1;}"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve">
-          <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
-        </svg> </button>
+      <div class="hav-menu">
+	      <button class="nav-menu-btn" onclick="if(i==1) {document.getElementsByClassName('links')[0].style.display = 'flex'; i=0;} else {document.getElementsByClassName('links')[0].style.display = 'none'; i=1;}"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve">
+	          <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+	        </svg> </button>
+      </div>
       <div class="links">
         <a href="#" class="nav-link"> Главная </a>
         <a href="#" class="nav-link"> Посты </a>
